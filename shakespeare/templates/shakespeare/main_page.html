@@ -92,8 +92,7 @@ body {
           console.log(this.responseText);
         }
 
-        function AJAXSubmit (oFormElement) {
-<!--          if (!oFormElement.action) { return; }-->
+        function AJAXSubmit (oFormElement) {1
             var oReq = new XMLHttpRequest();
             oReq.onload = ajaxSuccess;
             oReq.open("post", oFormElement.action);
