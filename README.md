@@ -13,13 +13,12 @@ INSTRUCTION TO BUILD AND DEPLOY:
 The build environment must support Python3
 
 - Make sure you have the latest version and python3. 
-(OPTIONAL - To create a Virtual Environment)
-- Install Virtual Environment (venv) Module if you would like to test the application in an isolated environment.
-    ``` python3 -m pip install --user virtualenv ```
-- Go to the folder of your choosing or create a new directory. 
+- (OPTIONAL - To create a Virtual Environment)
+Install Virtual Environment (venv) Module if you would like to test the application in an isolated environment using
+    ``` python3 -m pip install --user virtualenv ```. 
+ Go to the folder of your choosing or create a new directory using
    ```mkdir shakesMicro && cd shakesMicro ```
-- Create a new Virtual Environment. ```python3 -m venv env```
-- Activate it. ```source env/bin/activate```
+Create a new Virtual Environment using```python3 -m venv env``` and Activate it using ```source env/bin/activate```
 
 
 - Install django framework.
