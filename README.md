@@ -24,7 +24,7 @@ Method 1 (Recommended): Using Docker (Must have Docker installed)
 
 Method 2: Using Python3 (Must have Python3 installed)
 
-- Make sure you have the latest version and python3. 
+- Make sure you have the latest version of python3. 
 - (OPTIONAL - To create a Virtual Environment)
 Install Virtual Environment (venv) Module if you would like to test the application in an isolated environment using
     ``` python3 -m pip install --user virtualenv ```. 
