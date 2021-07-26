@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Page Title</title>
+<title>Shakespeare Microservice</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -71,20 +71,22 @@ body {
 <body>
 
 <div class="header">
-  <h1>Shakespeare Microservice</h1>
-  <h3> Developed by Gautham Varadarajan Shanmugara, for Nielsen Interview</h3>
+    <h1>Shakespeare Microservice</h1>
+    <h2> Developed by Gautham Varadarajan Shanmugaraj </h2>
+    <h5> Tech stack used: Docker, Python, Django Framework, Javascript, HTML and CSS </h5>
 </div>
-
 
 <div class="row">
   <div class="side">
     <h3>Instructions on File Format</h3>
     <p>
+    <list>
       <li> The file upload must be a text file.</li>
       <li> The text file must have all the topics / chapter names in all upper case at the beginning of the file.</li>
       <li> Only the topics/chapters must be in all capitals</li>
       <li> Upload the textfile and click on Submit Query </li>
       <li> You will then be redirected to page with the Json Output</li>
+    </list>
     </p>
   </div>
   
@@ -110,7 +112,7 @@ body {
         <form action="submitFile" method="post" enctype="multipart/form-data" onsubmit="AJAXSubmit(this); return false;">
           {% csrf_token %}
           <input type="file" name="myfile">
-          <input type="submit">Upload</input>
+          <input type="submit"> You will be redirected to the output page </input>
         </form>
 
     <br>
