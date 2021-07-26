@@ -109,7 +109,7 @@ body {
         </script>
 
         <form action="submitFile" method="post" enctype="multipart/form-data" onsubmit="AJAXSubmit(this); return false;">
-<!--          {% csrf_token %}-->
+          {% csrf_token %}
           <input type="file" name="myfile">
           <input type="submit"> You will be redirected to the output page </input>
         </form>
