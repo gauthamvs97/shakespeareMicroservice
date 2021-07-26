@@ -100,11 +100,12 @@ body {
           console.log(this.responseText);
         }
 
-        function AJAXSubmit (oFormElement) {
+        function AJAXSubmit (oFormElement) {1
             var oReq = new XMLHttpRequest();
             oReq.onload = ajaxSuccess;
             oReq.open("post", oFormElement.action);
             oReq.send(new FormData(oFormElement));
+          }
           }
         </script>
 
