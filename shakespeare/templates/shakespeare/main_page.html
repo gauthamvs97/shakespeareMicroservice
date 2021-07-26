@@ -100,13 +100,12 @@ body {
           console.log(this.responseText);
         }
 
-        function AJAXSubmit (oFormElement) {1
+        function AJAXSubmit (oFormElement) {
             var oReq = new XMLHttpRequest();
             oReq.onload = ajaxSuccess;
             oReq.open("post", oFormElement.action);
             oReq.send(new FormData(oFormElement));
           }
-        }
         </script>
 
         <form action="submitFile" method="post" enctype="multipart/form-data" onsubmit="AJAXSubmit(this); return false;">
