@@ -81,7 +81,7 @@ body {
     <h3>Instructions on File Format</h3>
     <p>
     <list>
-      <li> The file upload must be a text file.</li>
+      <li> The file uploaded must be a text file.</li>
       <li> The text file must have all the topics / chapter names in all upper case at the beginning of the file.</li>
       <li> Only the topics/chapters must be in all capitals</li>
       <li> Upload the textfile and click on Submit Query </li>
@@ -109,7 +109,7 @@ body {
         </script>
 
         <form action="submitFile" method="post" enctype="multipart/form-data" onsubmit="AJAXSubmit(this); return false;">
-          {% csrf_token %}
+<!--          {% csrf_token %}-->
           <input type="file" name="myfile">
           <input type="submit"> You will be redirected to the output page </input>
         </form>
