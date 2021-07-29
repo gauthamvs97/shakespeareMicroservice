@@ -16,8 +16,8 @@ Method 1 (Recommended): Using Docker (Must have Docker installed)
 ```git clone https://github.com/gauthamvs97/shakespeareMicroservice.git```
 - cd into the directory
 - Run ```docker-compose up``` to start the server
-- If successful, it will give a message "Starting the developement server at http://0.0.0.0:8000.
-- Type the ip address followed by /shakespeare in your web browser. Example URL would be "http://0.0.0.0:8000/shakespeare".
+- If successful, it will give a message "Starting the developement server at http://'ip address':8000.
+- Type the ip address or localhost followed by /shakespeare in your web browser. Example URL would be "http://localhost:8000/shakespeare".
 - Upload the text file found in the root directory and click the Submit button.
 - You will be redirected to the output page.
 
@@ -39,8 +39,8 @@ Create a new Virtual Environment using```python3 -m venv env``` and Activate it 
 - cd inside the directory.
 ```cd shakespeareMicroservice-Main```
 - Start the server using the command ```python3 manage.py runserver```
-- If successful, it will give a message "Starting the developement server at http://127.0.0.1:8000".
-- Type the ip address followed by /shakespeare in your web browser. URL would be "http://127.0.0.1:8000/shakespeare/"
+- If successful, it will give a message "Starting the developement server at http://'ip address':8000".
+- Type the ip address or localhost followed by /shakespeare in your web browser. URL would be "http://localhost:8000/shakespeare/"
 - Upload the text file found in the root directory and click the Submit button.
 - You will be redirected to the output page.
    
