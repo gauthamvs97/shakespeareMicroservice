@@ -61,7 +61,7 @@ body {
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-  .row {   
+  .row {
     flex-direction: column;
   }
 }
@@ -89,7 +89,7 @@ body {
     </list>
     </p>
   </div>
-  
+
   <div class="main">
     <h1> Upload a text file </h1>
 
@@ -98,15 +98,17 @@ body {
 
         function ajaxSuccess () {
           console.log(this.responseText);
+          document.getElementById("output").innerText = JSON.stringify(JSON.parse(this.responseText));
         }
 
-        function AJAXSubmit (oFormElement) {1
+        function AJAXSubmit (oFormElement) {
             var oReq = new XMLHttpRequest();
             oReq.onload = ajaxSuccess;
             oReq.open("post", oFormElement.action);
             oReq.send(new FormData(oFormElement));
+
           }
-          }
+
         </script>
 
         <form action="submitFile" method="post" enctype="multipart/form-data" onsubmit="AJAXSubmit(this); return false;">
@@ -117,6 +119,10 @@ body {
 
     <br>
   </div>
+  <p id = "output">
+
+
+  </p>
   
 </div>
 
